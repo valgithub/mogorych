@@ -1,0 +1,230 @@
+body {
+	background-image:url(../assets/img/kafe1.png);
+	width:  auto;
+	height:  auto;
+	z-index: -5;
+}
+
+#stroka{
+	opacity:0.5;
+	position: fixed;
+	z-index: 150;
+
+}
+#tabs{
+	width: 1225px;
+	display: inline-block;
+  position: fixed;
+	margin: 25px 0px 0px 10px;
+	padding: 0px;
+  border: 1px solid #111;
+  border-radius: 5px;
+  background-image: url(../assets/img/menu1.png);
+  font-weight: 600;
+  color: #11c;
+	opacity: 0.8;
+	z-index: 100;
+}
+
+#hamburger, #sushi, #pizza, #drink {
+	margin: 20px 20px 20px 40px;
+	padding: 0px;
+  border: 1px solid #111;;
+  border-radius: 12px;
+	width: 240px;
+	height: 160px;
+	font-size: 30px;
+  font-weight: 600;
+	background-color: #fff;
+  color: #ff0;
+  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+	cursor:  pointer;
+}
+
+#toppingsContainer{
+	width:245px;
+	height: 690px;
+	padding: 10px;
+  border-radius: 5px;
+  background-color: #8c7748;
+  font-weight: 600;
+  color: #11c;
+	position: fixed;
+	display: none;
+	opacity: 0.8;
+	margin: 25px 10px 10px 1250px;
+
+}
+
+/*#bulka, #kotleta, #syr, #salat, #luk,#tomat, #ogurec, #bekon, #sous,
+#sushi1, #sushi2, #sushi3, #sushi4, #sushi5,#sushi6, #sushi7, #sushi8, #sushi9,
+#kolbasa, #grib, #parmezan, #marinat {*/
+#toppingItem img{
+	margin: 20px 0px 0px 20px;
+	padding: 0px;
+  border: 1px solid #fff;;
+  border-radius: 12px;
+	width: 210px;
+	height: 60px;
+	font-size: 20px;
+ align: center;
+  font-weight: 600;
+		background-color: #fff;
+  color: #000;
+  margin-top: 10px;
+  display: inline-block;
+    position: relative;
+		cursor:  -webkit-grab;
+}
+
+
+#btns{
+	width: 200px;
+	height: 260px;
+	position: fixed;
+	display: inline-block;
+	margin: 235px 0px 0px 10px;
+	padding: 10px;
+  border-radius: 5px;
+  background-color: #aaa;
+	opacity: 0.8;
+  font-weight: 600;
+  color: #11c;
+}
+
+#select, #basket, #buy {
+	margin: 10px 10px 10px 10px;
+	padding: 0px;
+  /*border: 3px solid ;*/
+  border-radius: 12px;
+	width: 170px;
+	height: 50px;
+ 	font-size: 30px;
+  font-weight: 1200;
+  color: #11f;
+  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+	cursor:  pointer;
+}
+
+#select {
+background-color: #e36;
+}
+#basket {
+	background-color: #ff5;
+}
+#buy {
+	background-color: #3d3;
+	height: 100px;
+}
+
+#container{
+	width: 990px;
+	height: 100%;
+	position: absolute;
+  display: inline-block;
+  margin: 210px 0px 0px 245px;
+	padding: 20px;
+  /*border: 1px solid #0f0;
+  border-radius: 5px;*/
+  /*background-color: #77ddff;
+	opacity:0.4;*/
+  font-weight: 600;
+  color: #11c;
+	z-index: 0;
+}
+
+#select :focus:focus {
+  outline: 0;
+}
+/** {
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-decoration: none;
+}*/
+
+
+/*#container {
+  border: 1px solid #999999;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}*/
+
+.img.draggable{
+  cursor: -webkit-grabbing;
+}
+
+.item {
+  /*width: 25 %;*/
+  float: left;
+  margin: 20px 30px 20px 30px;
+  border: 1px solid gold;
+  border-radius: 17px;
+  padding: 15px;
+	background-color: #fff;
+text-align: center;
+}
+.item img{
+	opacity:1;
+	background-color: #fff;
+	z-index: 500;
+  width: 220px;
+	height: 150px;
+}
+
+span {
+  padding-top: 20px;
+}
+
+.check-control{
+	display: inline;
+	position: fixed;
+	top: 500px;
+	left: 25px;
+
+}
+
+.check-list-item{
+	background-color: #fff;
+}
+.check-pop-up{
+  display: inline;
+  position: fixed;
+}
+
+.check-pop-up.active{
+  display: block;
+}
+
+/*#_drop {
+  border-radius: 17px;
+  width: 70px;
+  height: 70px;
+  border: 1px solid gray;
+  float: left;
+  padding: 10px;
+}
+*/
+/*#toppingItem {
+  float: right;
+}
+
+#toppingItem img {
+  width: 50px;
+}*/
+
+/*#tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tabs img {
+  max-width: 150px;
+}*/

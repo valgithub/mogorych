@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Mogorych3</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body  id="body">
+
+	<marquee id="stroka" behavior="scroll" direction="left" bgcolor="#ffcc00" opacity="0.5" >
+			Если хочешь вкусно кушать, пиццу закажи и суши!!!   Если просто хочешь жрать, нужно гамбургеры брать!!!
+	</marquee>
+	<div id="tabs">
+
+	</div>
+	<div  id="btns">
+		<button id="select" onclick="observer.fire()">Выбрать</button>
+		<button id="basket" onclick="">Корзина</button>
+		<button id="buy" onclick="">Купить<br/>
+			<span id="counter"></span>
+		</button>
+
+	</div>
+	<div id="container">
+	</div>
+	<div id="toppingsContainer">
+	</div>
+	<div class="check-control">
+			<input type="button" value="чек">
+			<div id="checkListContainer" class="check-pop-up">
+					<div id="checkList" class="check-list-wrapper">
+					</div>
+			</div>
+	</div>
+
+	<template id="checkListItem">
+		<div class="check-list-item">
+			<span class="check-list-item-about">
+				<span class="check-list-item-name"></span>
+				<span class="check-list-item-consist"></span>
+			</span>
+			<span class="check-list-item-weight">weight:</span>
+			<span class="check-list-item-price">price:</span>
+			<span class="chek-list-action remove">[x]</span>
+		</div>
+	</template>
+
+	<template id="tmpl">
+	  <div class="item">
+	  	<img>
+	  	<span class="price"></span>
+	    <span class="weight"></span>
+	  </div>
+	</template>
+
+	<template id="toppingsTmpl"><div id="toppingItem"><img /></div></template>
+
+</body>
+<script type="text/javascript" src="js/lib/tools.js"></script>
+<script src="js/components/tabsPanel.js" type="text/javascript"></script>
+<script src="js/core/main.js" type="text/javascript"></script>
+<script src="js/components/hamburgerCreator.js" type="text/javascript"></script>
+<script src="js/components/pizzaCreator.js" type="text/javascript"></script>
+<script src="js/components/sushiCreator.js" type="text/javascript"></script>
+<script src="js/components/check.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/components/toppingPanel.js"></script>
+
+</html>
